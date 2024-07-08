@@ -2,6 +2,15 @@ import math
 from colorama import Fore
 while True:
     input1 = int(input("Enter : 1 for square, 2 for rectangle, 3 for circle  "))
+    input2 = int(input("CHANGE the color: 4 for red, 5 for green, 6 for yellow, 7 for blue "))
+    if input2==4:
+        print(Fore.RED)
+    if input2==5:
+        print(Fore.GREEN)
+    if input2==6:
+        print(Fore.YELLOW)
+    if input2==7:
+        print(Fore.BLUE)
     if input1 == 2:
         rows = int(input("enter the number of rows: "))
         columns = int(input("enter the number of columns: "))
