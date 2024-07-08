@@ -1,4 +1,5 @@
 import math
+from colorama import Fore
 while True:
     input1 = int(input("Enter : 1 for square, 2 for rectangle, 3 for circle  "))
     if input1 == 2:
@@ -26,11 +27,18 @@ while True:
                     print(" ", end=' ')
             print()
 
-
     else:
         print("try again")
-    keep = int(input("Press 1 for continue, 0 to close the program  "))
+    keep = int(input("Press 1 for continue with the same color, 0 to close the program, CHANGE the color: 4 for red, 5 for green, 6 for yellow, 7 for blue  "))
     if keep == 1:
         continue
     elif keep == 0:
         break
+    elif keep == 4:
+        print(Fore.RED + '')
+    elif keep == 5:
+        print(Fore.GREEN + '')
+    elif keep == 6:
+        print(Fore.YELLOW + '')
+    elif keep == 7:
+        print(Fore.BLUE + '')
