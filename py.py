@@ -1,53 +1,92 @@
-import math
-from colorama import Fore
-while True:
-    input1 = int(input("Enter : 1 for square, 2 for rectangle, 3 for circle  "))
-    input2 = int(input("CHANGE the color: 4 for red, 5 for green, 6 for yellow, 7 for blue "))
-    if input2==4:
-        print(Fore.RED)
-    if input2==5:
-        print(Fore.GREEN)
-    if input2==6:
-        print(Fore.YELLOW)
-    if input2==7:
-        print(Fore.BLUE)
-    if input1 == 2:
-        rows = int(input("enter the number of rows: "))
-        columns = int(input("enter the number of columns: "))
-        for i in range(rows):
-            for x in range(columns):
-                print(" * ", end="")
-            print()
-
-
-    elif input1 == 1:
-        num = int(input("enter the number of rows: "))
-        for i in range(1,num+1):
-            print(" * "*num)
-
-
-    elif input1 == 3:
-        radius = int(input("Enter the radius: "))
-        for x in range(-radius, radius + 1):
-            for y in range(-radius, radius + 1):
-                if radius - 1 <= math.sqrt(x ** 2 + y ** 2) <= radius:
-                    print("*", end=" ")
-                else:
-                    print(" ", end=' ')
-            print()
-
-    else:
-        print("try again")
-    keep = int(input("Press 1 for continue with the same color, 0 to close the program, CHANGE the color: 4 for red, 5 for green, 6 for yellow, 7 for blue  "))
-    if keep == 1:
-        continue
-    elif keep == 0:
-        break
-    elif keep == 4:
-        print(Fore.RED + '')
-    elif keep == 5:
-        print(Fore.GREEN + '')
-    elif keep == 6:
-        print(Fore.YELLOW + '')
-    elif keep == 7:
-        print(Fore.BLUE + '')
+locked_loans = """592809
+1152962
+1317094
+1374183
+1417414
+1426388
+1431354
+1432093
+1592134
+1604671
+1617437
+1622227
+1725659
+2023943
+2026054
+2030866
+2456068
+2456729
+2457709
+2458828
+2459458
+2459974
+2477780
+2479852
+2485873
+2488104
+2488410
+2488655
+2490628
+2491345
+2491397
+2491702
+2491890
+2493004
+2493256
+2521642
+2523184
+2523519
+2524194
+2525013
+2525328
+2526363
+2527984
+2528032
+2528831
+2529999
+2530607
+2531017
+2531825
+2531858
+2532466
+2532690
+2533150
+2533610
+2535727
+2536051
+2536784
+2537084
+2537124
+2537774
+2538561
+2538606
+2540648
+2540679
+2540788
+2568017
+2569056
+2571547
+2572480
+2573215
+2573353
+2573671
+2576622
+2579333
+2582409
+2583846
+2598146
+2598283
+2648887
+2653171
+2656257
+2662168
+2676180
+2676876
+2683042
+2683811
+2733547
+2735618
+2742361
+2770507"""
+print(locked_loans)
+print(len(locked_loans))
