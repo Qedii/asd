@@ -1,11 +1,21 @@
 f = open("locked_loans.txt")
-print(f.read())
+
+locked_ids = f.readlines()
+
+print(locked_ids)
+
+x = open("waiver_0.txt")
+
+file_ids = x.readlines()
+
+print(file_ids)
 
 
-
-
-
-
+for el in locked_ids:
+  file_ids = open("waiver_0.txt")
+  if file_ids.__contains__(el):
+    print(...)
+  file_ids.close()
 
 
 
