@@ -1,12 +1,14 @@
 f = open("locked_loans.txt")
 
 locked_ids = f.readlines()
+locked_ids.__contains__(locked_ids)
 
 print(locked_ids)
 
 x = open("waiver_0.txt")
 
 file_ids = x.readlines()
+file_ids.__contains__()
 
 print(file_ids)
 
